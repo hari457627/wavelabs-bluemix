@@ -1,0 +1,114 @@
+<div>
+	<h3>Why this Service?</h3>
+	<p>Wavelabs-OLX gives a platform to establish communication between Seller and Buyer.
+	It’s very hard to letting everyone know you have product to sell And for buyers also it’s very difficult to them directly searching for already used products for sell. To avoid this problem our wavelabs-olx providing platform.
+	</p>
+
+	<h3>Features</h3>
+
+	<ul>
+		<h4>Events on Advertisement</h4>
+		<li>Posting</li>
+		<li>Update</li>
+		<li>Delete</li>
+		<li>Read</li>
+	</ul>
+	<ul>
+		<h4>Events on Comment</h4>
+		<li>Posting</li>
+		<li>Update</li>
+		<li>Delete</li>
+		<li>Read</li>
+	</ul>
+
+	<h3>Services</h3>
+	<h4>To hit the Service</h4>
+	<p>End Point: <a href="https://nbos_tech_talks.cfapps.io/advertisement/1" target="_blank">https://nbos_tech_talks.cfapps.io/advertisement/1</a></p>
+	<p>Set the header with accesstoken</p>
+	<p>Syntax: <code>access_token : {token_values}</code></p>
+
+	<h3>Post Your Add?</h3>
+	<p>Observe, below Image to post advertisement with attributes title, category and Ad Description. In addition to that description you also need to pass the User object with attributes id.</p>
+	<a href="" data-toggle="modal" data-target="#myModal">Click to see the image</a>
+	<div class="modal fade" id="myModal" role="dialog">
+	    <div class="modal-dialog">	    
+	      <!-- Modal content-->
+		    <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        </div>
+		        <div class="modal-body">
+		          <img src="">
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+		    </div>	      
+	    </div>
+  	</div>
+  	<p>End Point: <a href=" https://nbos_tech_talks.cfapps.io/advertisement" target="_blank"> https://nbos_tech_talks.cfapps.io/advertisement</a></p>
+
+  	<h4>Sample Input Json</h4>
+  	<code>
+  		{<br>
+		  "name": "bike add",<br>
+		  "type": "PERSONAL",<br>
+		  "description": "Duke bike for 70k In kondapur, contact : 9032118864",<br>
+		  "user": {<br>
+		    "id": 1<br>
+		  },<br>
+		  "location": "Vijayawada"<br>
+		}
+  	</code>
+
+  	<h4>Search your Add?</h4>
+  	<p>search operation is performed using solr server.</p>
+  	<a href="" data-toggle="modal" data-target="#myModal">Click to see the image</a>
+	<div class="modal fade" id="myModal" role="dialog">
+	    <div class="modal-dialog">	    
+	      <!-- Modal content-->
+		    <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        </div>
+		        <div class="modal-body">
+		          <img src="">
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+		    </div>	      
+	    </div>
+  	</div>
+  	<p>End Point: <a href="https://nbos_tech_talks.cfapps.io/advertisement/search/{search keyword}" target="_blank">https://nbos_tech_talks.cfapps.io/advertisement/search/{search keyword}
+	</a></p>
+
+	<h4>Post Your Comment to Add?</h4>
+	<p>To post a comment on advertisement, use the api</p>
+	<p>End Point: <a href="https://nbos_tech_talks.cfapps.io/advertisement/comment" target="_blank">https://nbos_tech_talks.cfapps.io/advertisement/comment</a></p>
+	<h4>Sample Input Json</h4>
+  	<code>
+  		{<br>
+		    "advertisement": {<br>
+		      "id": 2,<br>
+		      "name": "gopi krishna",<br>
+		      "type": "PROPERTY",<br>
+		      "description": "something",<br>
+		      "user": {<br>
+		        "id": 1,<br>
+		        "uuid": "MBR:c2db3408-3b77-47ac-8559-98d3ccb67add",<br>
+		        "tenantId": "TNT:OLX-gz2tq8fy"<br>
+		      },<br>
+		      "location": "khammam"<br>
+		    },<br>
+		    "user": {<br>
+		      "id": 1,<br>
+		      "uuid": "MBR:c2db3408-3b77-47ac-8559-98d3ccb67add",<br>
+		      "tenantId": "TNT:OLX-gz2tq8fy"<br>
+		    },<br>
+		    "text": "POsting test comment after jap migration",<br>
+		    "timeStamp": 1497007592000<br>
+  		}
+
+  	</code>
+</div>

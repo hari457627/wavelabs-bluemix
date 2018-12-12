@@ -1,0 +1,12 @@
+{
+  "name": "bootstrap",
+  "version": "0.0.1",
+  "description": "node server",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
